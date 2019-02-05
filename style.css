@@ -1,3 +1,51 @@
+html {
+  height: 100%;
+}
+
 body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg") 50% 75%/cover no-repeat scroll;
+  color: white;
+  display: flex;
   font-family: 'Merriweather Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 16pt;
+  font-weight: 300;
+  margin: auto;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+h1 {
+  font-family: Merriweather, serif;
+  font-weight: 900;
+}
+
+span {
+  display: block;
+}
+
+ul {
+  font-size: smaller;
+  list-style: none;
+  margin-top: 1em;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+li:not(:last-child)::after {
+  content: '\00b7';
+  margin: 0 0 0 0.35em;
+}
+
+a {
+  color: white;
 }
